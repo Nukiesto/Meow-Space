@@ -17,7 +17,7 @@
         "f16e4b78-8390-4a17-be0b-11bc0f84c061",
         "f8af8058-5587-4bba-bc79-d7b50452d500"
     ],
-    "filterType": "root",
+    "filterType": "user",
     "folderName": "Edit items",
     "isDefaultView": false,
     "localisedFolderName": ""

@@ -3595,7 +3595,7 @@
             "y": 9647
         }
     ],
-    "sampleText": "abcdef ABCDEF\\u000d\\u000a0123456789 .,<>\"'&!?\\u000d\\u000athe quick brown fox jumps over the lazy dog\\u000d\\u000aTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\\u000d\\u000aDefault character: ▯ (9647)\\u000d\\u000a \\u0001\\u0002\\u0003\\u0004\\u0005\\u0006\\u0007\\u0008\\u0009\\u000d\\u000a\\u000b\\u000c\\u000d\\u000a\\u000e\\u000f\\u0010\\u0011\\u0012\\u0013\\u0014\\u0015\\u0016\\u0017\\u0018\\u0019\\u001a\\u001b\\u001c\\u001d\\u001e\\u001f !\"#$%&'()*+,-.\/0123456789:;<=>\\u000d\\u000a?@ABCDEFGHIJKLMNOPQRSTUVWX\\u000d\\u000aYZ[\\]^_`abcdefghijklmnopqrstАБВГДЕЖЗИ\\u000d\\u000aЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯаб\\u000d\\u000aвгдежзийклмнопрстуфхцчшщъ\\u000d\\u000aыьэю",
+    "sampleText": "abcdef ABCDEF\\u000a0123456789 .,<>\"'&!?\\u000athe quick brown fox jumps over the lazy dog\\u000aTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\\u000aDefault character: ▯ (9647)\\u000a \\u0001\\u0002\\u0003\\u0004\\u0005\\u0006\\u0007\\u0008\\u0009\\u000a\\u000b\\u000c\\u000a\\u000e\\u000f\\u0010\\u0011\\u0012\\u0013\\u0014\\u0015\\u0016\\u0017\\u0018\\u0019\\u001a\\u001b\\u001c\\u001d\\u001e\\u001f !\"#$%&'()*+,-.\/0123456789:;<=>\\u000a?@ABCDEFGHIJKLMNOPQRSTUVWX\\u000aYZ[\\]^_`abcdefghijklmnopqrstАБВГДЕЖЗИ\\u000aЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯаб\\u000aвгдежзийклмнопрстуфхцчшщъ\\u000aыьэю",
     "size": 12,
     "styleName": "Regular",
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f"
