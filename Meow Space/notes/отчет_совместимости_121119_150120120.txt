@@ -1,0 +1,12 @@
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Конвертирование GML скрипта: ${project_dir}\objects\objMapGen\Draw_0.gml
+Конвертирование строки - строка 10: 'W' -> "W"
+Конвертирование строки - строка 11: 'S' -> "S"
+Конвертирование строки - строка 12: 'A' -> "A"
+Конвертирование строки - строка 13: 'D' -> "D"
+
+Скорость игры установлена на 30
+Добавлен скрипт совместимости 'instance/instance_create.gml'
+Добавлен скрипт совместимости 'object/object_get_depth.gml'
+Добавлен скрипт совместимости '__global_object_depths.gml'
