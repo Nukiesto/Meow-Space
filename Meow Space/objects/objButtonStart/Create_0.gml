@@ -1,4 +1,5 @@
+
 event_inherited();
 str="Play";
-roomTypeButton="menu";
+roomTypeButton="menu"
 

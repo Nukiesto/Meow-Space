@@ -1,0 +1,8 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+// Inherit the parent event
+event_inherited();
+if (show_question("Delete world?")) {
+	world_delete(4);
+}

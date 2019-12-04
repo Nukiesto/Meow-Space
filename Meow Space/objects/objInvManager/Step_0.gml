@@ -20,10 +20,10 @@ if (mouse_wheel_down()) {
 for (var i = 0; i < MAX_ACTIVE_INV_ITEMS; ++i) {
 	if (keyboard_check_pressed(ord(string(i)))) {
 		var _itemType = inventory[i - 1];
-		if (select = i)	{
+		if (select = i)	{			
 			inv_UseItem(_itemType);	
 		}
-		select = i;		
+		select = i-1;		
 	}
 }
 

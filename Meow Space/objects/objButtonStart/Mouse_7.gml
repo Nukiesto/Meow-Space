@@ -1,3 +1,3 @@
+
 event_inherited();
-roomType="game";
-room=rmMain;
+roomType="world_manager";

@@ -8,10 +8,18 @@ if ((window_get_width()=!1024)&&(window_get_height()=!768)){
 }
 if (keyboard_check_pressed(vk_f1)) then debugMode=!debugMode;
 if (keyboard_check_pressed(vk_escape)) {
+	world_save(1);	
 	instance_destroy(objGenerator);
 	ds_grid_set_region(frontWorldLight,0,0,worldWidth,worldHeight,1);
-	roomType = "menu";room = rmMenu;
+	roomType = "pause"; room = rmMenu;	
 }
+if (keyboard_check_pressed(ord("Q"))) {
+	world_save(1);
+}
+if (keyboard_check_pressed(ord("E"))) {
+	world_load(1);
+}
+/*
 //camera_set_view_speed(camera,objPlayer.speed,objPlayer.speed);
 if (roomType=="game"){
 	#region Optimizing

@@ -10,13 +10,9 @@ if (mouse_check_button(mb_left)) {
 			if (!instance_place(x, y, objBlockBedrock)){			
 				var _other  = instance_nearest(x, y, objBlockPar);	
 				var _object = _other.blockIndex;
-				var _type   = array_find_type(_object);				
-				//"ItemType." + string_replace(object_get_name(), "obj", "");
+				var _type = objInvManager.blockDef[_object];  					
 				var _otherX = _other.x;
 				var _otherY = _other.y;
-				//with (objInvManager) {				
-				//	var _object = inv_Definitions[_type, ItemProperties.blockObj];										
-				//}
 				ds_grid_set(objGenerator.idBlock, x / 32, y /32, -1);
 				ds_grid_set(objGenerator.frontWorld, x / 32, y / 32, -1);
 				if (confOptimizing){

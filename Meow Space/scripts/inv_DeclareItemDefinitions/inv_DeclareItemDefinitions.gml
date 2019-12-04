@@ -66,14 +66,21 @@ inv_AddItemDef(
 				"Stone", 
 				0, 
 				use_Empty(),
-				noone);
+				objBlockCobblestone);
+inv_AddItemDef(
+				ItemType.BlockCobbleStone, 
+				sprBlockCobblestone, 
+				"Cobblestone", 
+				0, 
+				use_Empty(),
+				objBlockCobblestone);			
 inv_AddItemDef(
 				ItemType.BlockGravel, 
 				sprBlockGravel, 
 				"Gravel", 
 				0, 
 				use_Empty(),
-				noone)
+				objBlockGravel)
 inv_AddItemDef(
 				ItemType.BlockBedrock, 
 				sprBlockBedrock, 

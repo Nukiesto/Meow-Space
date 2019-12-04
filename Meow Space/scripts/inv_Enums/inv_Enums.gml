@@ -8,6 +8,7 @@ enum ItemType {
 	TreeLeaves,
 	BlockDirt,	
 	BlockStone,
+	BlockCobbleStone,
 	BlockSand,
 	BlockGravel,
 	BlockBedrock,

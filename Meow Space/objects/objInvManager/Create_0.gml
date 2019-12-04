@@ -16,7 +16,4 @@ selectBlock = -1;
 
 image_speed = 0;
 
-dsBlocks = ds_list_create();
-var i = -1;
-while(object_exists(++i)) if(object_get_parent(i) == objBlockPar) ds_list_add(dsBlocks, i);
-
+//blockDef[0] = -1;
