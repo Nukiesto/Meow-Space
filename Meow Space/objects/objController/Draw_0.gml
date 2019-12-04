@@ -1,5 +1,19 @@
 ///@description Рисование мира
+#region 3D Stereo
+if (conf3dStereo) {
+	shader_set(shd_stereo3d);
+	_disp = shader_get_uniform(shd_stereo3d, "displacement");
+	shader_set_uniform_f(_disp, 0.003);
+	//draw_background_tiled(bg_checkerboard, 0, _move);
+	shader_reset();
 
+	shader_set(shd_stereo3d);
+	_disp = shader_get_uniform(shd_stereo3d, "displacement");
+	shader_set_uniform_f(_disp, -0.003);
+	//draw_self();
+	shader_reset();
+}
+#endregion
 if (roomType=="game")
 {
 	var temp=gpu_get_tex_mip_filter();

@@ -1,0 +1,4 @@
+Конвертирование GML скрипта: ${project_dir}\scripts\totro\totro.gml
+Converted description /// @description totro(minsyl,maxsyl,n)/// @param minsyl
+/// @param maxsyl
+/// @param n

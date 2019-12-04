@@ -19,6 +19,7 @@ backWorldLight = ds_grid_create(worldWidth, worldHeight);
 ds_grid_set_region(frontWorldLight,0, 0,worldWidth, worldHeight, 1);
 ds_grid_set_region(backWorldLight,0, 0,worldWidth, worldHeight, 1);
 
-globalvar roomType,confOptimizing;
+globalvar roomType, confOptimizing, conf3dStereo;
 roomType = "menu";
 confOptimizing = 1;
+conf3dStereo = 0;
