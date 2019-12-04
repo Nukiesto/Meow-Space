@@ -1,7 +1,8 @@
-
+///@description Initialize
 #macro GRAVITY_INVARIABLE 0.0075
 #macro distance_to_touch (32*4)
 
+nick = random_nickname(6, 8, 1);
 draw_set_font(fontMain);
 
 gpu_set_tex_mip_enable(mip_on);

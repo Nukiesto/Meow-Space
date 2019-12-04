@@ -8,27 +8,21 @@ if (mouse_check_button(mb_left)) {
 	if (distance_to_object(objPlayer) < distance_to_touch) and !(place_free(x, y)) {		
 		if (place_meeting(x, y, objBlockPar)) {		
 			if (!instance_place(x, y, objBlockBedrock)){			
-				var _other = instance_nearest(x, y, objBlockPar);			
-				var _str1 = ItemType.BlockSand;
-				//"ItemType." + string_replace(object_get_name(_other.blockIndex), "obj", "");
+				var _other  = instance_nearest(x, y, objBlockPar);	
+				var _object = _other.blockIndex;
+				var _type   = array_find_type(_object);				
+				//"ItemType." + string_replace(object_get_name(), "obj", "");
 				var _otherX = _other.x;
 				var _otherY = _other.y;
-				with (objInvManager) {				
-					var _object = inv_Definitions[_str1, ItemProperties.blockObj];										
-				}
+				//with (objInvManager) {				
+				//	var _object = inv_Definitions[_type, ItemProperties.blockObj];										
+				//}
 				ds_grid_set(objGenerator.idBlock, x / 32, y /32, -1);
-					ds_grid_set(objGenerator.frontWorld, x / 32, y / 32, -1);
-					if (confOptimizing){
-						ds_grid_set(objController.frontWorldLight, x / 32, y / 32, 0);
-					}							
-				if (array_find_index(ItemType.BlockSand, _other) == -1) {
-					if (_other = _object) {
-						with (objInvManager) {
-							instance_create_item(_otherX, _otherY, ItemType.BlockSand);
-						}
-					}
-				}
-				instance_create_item(_otherX, _otherY, ItemType.BlockSand);
+				ds_grid_set(objGenerator.frontWorld, x / 32, y / 32, -1);
+				if (confOptimizing){
+					ds_grid_set(objController.frontWorldLight, x / 32, y / 32, 0);
+				}											
+				instance_create_item(_otherX, _otherY, _type);
 				with (_other) {				
 					instance_destroy();					
 				}

@@ -1,4 +1,6 @@
+///@description 
 //display_set_gui_size(display_get_width() / 4, display_get_height() / 4);
+
 if ((window_get_width()=!1024)&&(window_get_height()=!768)){	
 	display_set_gui_size(window_get_width(), window_get_height());
 	//window_set_max_width(1024);

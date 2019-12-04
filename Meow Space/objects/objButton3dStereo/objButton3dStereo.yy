@@ -2,7 +2,7 @@
     "id": "2dd4c9de-f477-4e19-a8cf-51992c871c00",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objButtonOptimizing1",
+    "name": "objButton3dStereo",
     "eventList": [
         {
             "id": "90665490-8dea-4c6f-8583-a1dd27bbd002",
@@ -46,7 +46,7 @@
             "value": "Play"
         }
     ],
-    "parentObjectId": "4b969f7c-77ca-4d9d-9f75-e765a0dadb44",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

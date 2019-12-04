@@ -105,6 +105,7 @@ consonants[17,0] = "w"; consonants[17,1] = 7;
 consonants[18,0] = "x"; consonants[18,1] = 7;
 consonants[19,0] = "y"; consonants[19,1] = 7;
 consonants[20,0] = "z"; consonants[20,1] = 7;
+consonants[21,0] = "kr"; consonants[21,1] = 6;
 // Blends, sorted by second character:
 consonants[22,0] = "sc"; consonants[22,1] = 7;
 consonants[23,0] = "ch"; consonants[23,1] = 7;
@@ -177,7 +178,7 @@ consonants[88,0] = "dr"; consonants[88,1] = 6;
 consonants[89,0] = "fr"; consonants[89,1] = 6;
 consonants[90,0] = "gr"; consonants[90,1] = 6;
 //I forgot 21.... :/
-consonants[21,0] = "kr"; consonants[21,1] = 6;
+
 //Have fun editing that...
 
 // Create a random name in each for loop and add them to an array- oh no not arrays again!
@@ -217,7 +218,7 @@ for (j=0;j<n;j++) {
         isvowel = 1 - isvowel; // Alternate between vowels and consonants.
     }
     // Initial caps:
-    genname = string_upper(string_char_at(genname,1))+string_copy(genname, 2, string_length(genname)-1);
+	genname = string_upper(string_char_at(genname,1))+string_copy(genname, 2, string_length(genname)-1);
     names[j] = genname;
 }
-return names;
+return genname;//names;

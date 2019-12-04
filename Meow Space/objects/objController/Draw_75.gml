@@ -1,3 +1,4 @@
+
 if (debugMode){
 	var temp = gpu_get_tex_mip_filter();
 	if (temp != tf_linear)
@@ -7,7 +8,8 @@ if (debugMode){
 	draw_set_color(c_white);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
-	draw_text(4,4,"FPS: "+string(fps)+"/30");
+	//draw_text(4, 4, string(nick));
+	draw_text(4, 4,"FPS: "+string(fps)+"/30");
 	if (instance_exists(objPlayer)){
 		draw_text(4,4+15,"X: "+string(objPlayer.x div 32));
 		draw_text(4,4+((15)*2)+4,"Y: "+string(objPlayer.y div 32));
