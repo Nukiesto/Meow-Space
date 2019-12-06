@@ -23,5 +23,6 @@ enum ItemProperties {
 	amount,
 	useScript,
 	blockObj,
-	length
+	blockObjDrop,
+	length	
 }

@@ -8,9 +8,10 @@ if (mouse_check_button(mb_left)) {
 	if (distance_to_object(objPlayer) < distance_to_touch) and !(place_free(x, y)) {		
 		if (place_meeting(x, y, objBlockPar)) {		
 			if (!instance_place(x, y, objBlockBedrock)){			
+				
 				var _other  = instance_nearest(x, y, objBlockPar);	
-				var _object = _other.blockIndex;
-				var _type = objInvManager.blockDef[_object];  					
+				var _object = _other.blockIndex;	
+				var _type = inv_get_block_type(_object);
 				var _otherX = _other.x;
 				var _otherY = _other.y;
 				ds_grid_set(objGenerator.idBlock, x / 32, y /32, -1);
@@ -31,25 +32,10 @@ if (mouse_check_button(mb_left)) {
 if (mouse_check_button_pressed(mb_right)) {
 	if (distance_to_object(objPlayer) < distance_to_touch) and (place_free(x, y)) and !(instance_position(x + 16, y + 16, objPlayer)) and !(place_meeting(x, y, all)) {
 		with (objInvManager) {
-			var _itemDefIndex  = inventory[select];
-			var _object        = inv_Definitions[_itemDefIndex, ItemProperties.blockObj];
-		}		
-		if (_itemDefIndex != ItemType.none) {
-			var _idBlok;
-			_idBlok = instance_create_depth(
-				x, y, 0, //objBlockDirt
-				_object
-				);	
-			//instance_create_depth(x , y, 0, objBlockDirt);
-			ds_grid_set(objGenerator.idBlock, x / 32, y /32, _idBlok); 
-			ds_grid_set(objGenerator.frontWorld, x / 32, y / 32, _object);	
-			with (objInvManager) {
-				inv_RemoveItem(_itemDefIndex);
-			}
-			if (confOptimizing){
-				ds_grid_set(objController.frontWorldLight, x / 32, y / 32, 1);
-			}			
-		}
+			instance_create_block(x, y, inventory[select]);
+			if (instance_create_block(x, y, inventory[select])) 
+				inv_RemoveItem(inventory[select]);
+		}					
 	} 
 }
 #endregion

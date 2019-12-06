@@ -43,7 +43,9 @@
 				with (objPlayerWeapon) {
 				    //draw_sprite_ext(sprite_index, -1, x, y, scale, yscale, angle, c_white, 1);
 				}
-				if (instance_exists(objPlayerPart))      then draw_sprite(objPlayerPart.sprite_index, 0,objPlayerPart.x,objPlayerPart.y);
+				if (instance_exists(objPlayer)) {
+					if (instance_exists(objPlayerPart))      then draw_sprite(objPlayerPart.sprite_index, 0,objPlayerPart.x,objPlayerPart.y);
+				}
 				//if (instance_exists(objPlayerWeapon))      then draw_sprite(objPlayerWeapon.sprite_index, 0,objPlayerWeapon.x,objPlayerWeapon.y);
 				//if (instance_exists(objPlayerHandWeapon))then draw_sprite(objPlayerHandWeapon.sprite_index, 0,objPlayerHandWeapon.x,objPlayerHandWeapon.y);
 			}
@@ -93,7 +95,9 @@
 				}
 			}
 		}
-		draw_sprite_ext(sprLight, 0, objPlayer.x, objPlayer.y, 4, 4, 0, c_white, 0.5);
+		if (instance_exists(objPlayer)) {
+			draw_sprite_ext(sprLight, 0, objPlayer.x, objPlayer.y, 4, 4, 0, c_white, 0.5);
+		}
 		gpu_set_blendmode(bm_normal);
 		surface_reset_target();
 		gpu_set_tex_filter(true);

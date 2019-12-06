@@ -1,6 +1,9 @@
 /// @description Inventory Initialize
-
+//stageInitialize = 0;
 inv_Initialize();
+
+//stageInitialize = 1;
+//inv_Initialize();
 
 camera = view_camera[0];
 

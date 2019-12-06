@@ -1,7 +1,8 @@
 ///@description 
 //display_set_gui_size(display_get_width() / 4, display_get_height() / 4);
 
-if ((window_get_width()=!1024)&&(window_get_height()=!768)){	
+
+if ((window_get_width()=!1024)&&(window_get_height()=!768)) {	
 	display_set_gui_size(window_get_width(), window_get_height());
 	//window_set_max_width(1024);
 	//window_set_max_height(768);	
@@ -9,8 +10,12 @@ if ((window_get_width()=!1024)&&(window_get_height()=!768)){
 if (keyboard_check_pressed(vk_f1)) then debugMode=!debugMode;
 if (keyboard_check_pressed(vk_escape)) {
 	world_save(1);	
+	canCameraMoveToSpawn = 1;
+	canCreatePlayer = 0;
 	instance_destroy(objGenerator);
 	ds_grid_set_region(frontWorldLight,0,0,worldWidth,worldHeight,1);
+	random_set_seed(random_range(0,10000000))
+	worldSetSeed = random_get_seed();	
 	roomType = "pause"; room = rmMenu;	
 }
 if (keyboard_check_pressed(ord("Q"))) {
@@ -19,6 +24,8 @@ if (keyboard_check_pressed(ord("Q"))) {
 if (keyboard_check_pressed(ord("E"))) {
 	world_load(1);
 }
+
+
 /*
 //camera_set_view_speed(camera,objPlayer.speed,objPlayer.speed);
 if (roomType=="game"){

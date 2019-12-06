@@ -1,2 +1,2 @@
 event_inherited();
-random_set_seed(get_integer("Seed",0));
+worldSetSeed = (get_integer("Seed", worldSetSeed));

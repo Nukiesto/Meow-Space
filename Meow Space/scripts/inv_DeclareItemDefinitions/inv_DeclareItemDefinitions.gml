@@ -1,7 +1,7 @@
 
 inv_Definitions[ItemType.length, ItemProperties.length] = noone;
 
-inv_AddItemDef(ItemType.none, sprNoone, "", 0, use_Empty(), noone);
+inv_AddItemDef(ItemType.none, sprNoone, "", 0, use_Empty(), noone, noone);
 
 #region Flat
 #region Biomes
@@ -11,14 +11,17 @@ inv_AddItemDef(
 				"Dirt", 
 				0, 
 				use_Empty(),
-				objBlockDirt);
+				objBlockDirt,
+				noone
+				);
 inv_AddItemDef(
 				ItemType.BlockSand, 
 				sprBlockSand, 
 				"Sand", 
 				0, 
 				use_Empty(),
-				objBlockSand);
+				objBlockSand,
+				noone);
 #endregion
 #region Tree
 inv_AddItemDef(
@@ -27,6 +30,7 @@ inv_AddItemDef(
 				"Cactus", 
 				0, 
 				use_Empty(),
+				noone,
 				noone);
 inv_AddItemDef(
 				ItemType.TreeOak, 
@@ -34,6 +38,7 @@ inv_AddItemDef(
 				"Oak", 
 				0, 
 				use_Empty(),
+				noone,
 				noone);
 inv_AddItemDef(
 				ItemType.TreeDarkOak, 
@@ -41,6 +46,7 @@ inv_AddItemDef(
 				"Dark Oak", 
 				0, 
 				use_Empty(),
+				noone,
 				noone);
 inv_AddItemDef(
 				ItemType.TreeBerch, 
@@ -48,6 +54,7 @@ inv_AddItemDef(
 				"Berch", 
 				0, 
 				use_Empty(),
+				noone,
 				noone);
 inv_AddItemDef(
 				ItemType.TreeLeaves, 
@@ -55,6 +62,7 @@ inv_AddItemDef(
 				"Leaves", 
 				0, 
 				use_Empty(),
+				noone,
 				noone);				
 #endregion
 #endregion	
@@ -66,6 +74,7 @@ inv_AddItemDef(
 				"Stone", 
 				0, 
 				use_Empty(),
+				objBlockStone,
 				objBlockCobblestone);
 inv_AddItemDef(
 				ItemType.BlockCobbleStone, 
@@ -73,21 +82,25 @@ inv_AddItemDef(
 				"Cobblestone", 
 				0, 
 				use_Empty(),
-				objBlockCobblestone);			
+				objBlockCobblestone,
+				noone);			
+				
 inv_AddItemDef(
 				ItemType.BlockGravel, 
 				sprBlockGravel, 
 				"Gravel", 
 				0, 
 				use_Empty(),
-				objBlockGravel)
+				objBlockGravel,
+				noone);
 inv_AddItemDef(
 				ItemType.BlockBedrock, 
 				sprBlockBedrock, 
 				"Bedrock", 
 				0, 
 				use_Empty(),
-				objBlockBedrock)
+				objBlockBedrock,
+				noone);
 #endregion
 #region Ores
 inv_AddItemDef(
@@ -96,13 +109,15 @@ inv_AddItemDef(
 				"Ore Coal", 
 				0, 
 				use_Empty(),
-				objBlockOreCoal);
+				objBlockOreCoal,
+				noone);
 inv_AddItemDef(
 				ItemType.BlockOreIron, 
 				sprBlockOreIron, 
 				"Ore Iron", 
 				0, 
 				use_Empty(),
-				objBlockOreIron);
+				objBlockOreIron,
+				noone);
 #endregion
 #endregion			
